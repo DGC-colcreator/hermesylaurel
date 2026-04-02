@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hermes y Laurel | Asesoría Estratégica para PyMEs Colombianas</title>
+<meta name="description" content="Transformamos el rendimiento directivo de pymes en crecimiento. Diagnóstico estratégico, liderazgo de alto rendimiento y gobierno corporativo. Medellín, Colombia.">
+<meta property="og:title" content="Hermes y Laurel | Asesoría Estratégica para PyMEs Colombianas">
+<meta property="og:description" content="Transformamos el rendimiento directivo de pymes en crecimiento. Diagnóstico estratégico, liderazgo de alto rendimiento y gobierno corporativo.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════
+   RESET & VARIABLES
+   ═══════════════════════════════════════════════════════ */
+:root {
+  --navy: #1B3A5C;
+  --navy-dark: #122840;
+  --navy-light: #264d73;
+  --blue: #2a6496;
+  --gold: #C9A84C;
+  --gold-light: #d4b76a;
+  --gold-bg: #fdf8ed;
+  --text: #222222;
+  --text-light: #555555;
+  --text-muted: #888888;
+  --bg: #ffffff;
+  --bg-alt: #f4f6f8;
+  --bg-dark: #0f1f2e;
+  --border: #dde3ea;
+  --green: #27785a;
+  --green-bg: #e8f5ec;
+  --red: #c0392b;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-h: 'Inter', 'Segoe UI', sans-serif;
+  --font-b: 'Source Serif 4', Georgia, serif;
+  --max-w: 1120px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: var(--font-b);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--blue); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--gold); }
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+/* ═══════════════════════════════════════════════════════
+   TYPOGRAPHY
+   ═══════════════════════════════════════════════════════ */
+h1, h2, h3, h4 { font-family: var(--font-h); line-height: 1.2; color: var(--navy); }
+h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 800; }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 700; }
+h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); font-weight: 600; }
+p { margin-bottom: 1em; }
+
+.section-label {
+  font-family: var(--font-h);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section-title { margin-bottom: 20px; }
+.section-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-light);
+  max-width: 640px;
+  line-height: 1.65;
+}
+
+/* ═══════════════════════════════════════════════════════
+   BUTTONS
+   ═══════════════════════════════════════════════════════ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-h);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 16px 36px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy-dark);
+}
+.btn-primary:hover {
+  background: var(--gold-light);
+  color: var(--navy-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(201,168,76,0.35);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--bg);
+  border: 2px solid rgba(255,255,255,0.4);
+}
+.btn-secondary:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+.btn-outline:hover {
+  background: var(--navy);
+  color: var(--bg);
+}
+
+.btn-lg { font-size: 1.1rem; padding: 18px 44px; }
+.btn-sm { font-size: 0.9rem; padding: 12px 24px; }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION: HERO
+   ═══════════════════════════════════════════════════════ */
+.hero {
+  background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 50%, var(--navy-light) 100%);
+  color: var(--bg);
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(201,168,76,0.05) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-brand {
+  font-family: var(--font-h);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  color: var(--bg);
+  margin-bottom: 24px;
+}
+
+.hero h1 em {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.hero-sub {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-stat {
+  border-left: 2px solid var(--gold);
+  padding-left: 16px;
+}
+
+.hero-stat-number {
+  font-family: var(--font-h);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-family: var(--font-h);
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.55);
+  margin-top: 4px;
+}
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-placeholder {
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, rgba(201,168,76,0.1) 0%, rgba(255,255,255,0.04) 100%);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+  color: rgba(255,255,255,0.3);
+  font-family: var(--font-h);
+  font-size: 0.85rem;
+}
+
+.hero-image-placeholder .icon-placeholder {
+  width: 64px;
+  height: 64px;
+  border: 2px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION: PROBLEMA
+   ═══════════════════════════════════════════════════════ */
+.problema {
+  padding: 100px 0;
+  background: var(--bg);
+}
+
+.problema-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.problema-header .section-subtitle {
+  margin: 0 auto;
+}
+
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.pain-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.pain-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gold);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.pain-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold);
+}
+
+.pain-card:hover::before { opacity: 1; }
+
+.pain-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--gold-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.pain-card h3 { margin-bottom: 10px; color: var(--navy); }
+.pain-card p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 0; }
+
+.problema-cierre {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px;
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--gold);
+}
+
+.problema-cierre p { margin-bottom: 0; font-size: 1.05rem; }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION: SOLUCIÓN
+   ═══════════════════════════════════════════════════════ */
+.solucion {
+  padding: 100px 0;
+  background: var(--bg-alt);
+}
+
+.solucion-intro {
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+
+.pilares-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.pilar-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: all var(--transition);
+  border-bottom: 3px solid transparent;
+}
+
+.pilar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-bottom-color: var(--gold);
+}
+
+.pilar-number {
+  font-family: var(--font-h);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.pilar-card h3 { margin-bottom: 12px; }
+.pilar-card p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 0; }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION: SERVICIOS
+   ═══════════════════════════════════════════════════════ */
+.servicios {
+  padding: 100px 0;
+  background: var(--bg);
+}
+
+.servicios-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.servicios-header .section-subtitle { margin: 0 auto; }
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.servicio-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.servicio-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.servicio-badge {
+  font-family: var(--font-h);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  color: var(--bg);
+}
+
+.badge-entry { background: var(--blue); }
+.badge-impact { background: var(--navy); }
+.badge-retainer { background: var(--green); }
+
+.servicio-body {
+  padding: 28px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.servicio-body h3 { margin-bottom: 12px; font-size: 1.2rem; }
+.servicio-body p { color: var(--text-light); font-size: 0.93rem; flex: 1; }
+
+.servicio-meta {
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-h);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.servicio-meta .precio {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.servicios-cta {
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+.servicios-cta a {
+  color: var(--gold);
+  font-weight: 600;
+  border-bottom: 2px solid var(--gold);
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION: EQUIPO
+   ═══════════════════════════════════════════════════════ */
+.equipo {
+  padding: 100px 0;
+  background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 100%);
+  color: var(--bg);
+}
+
+.equipo .section-label { color: var(--gold); }
+.equipo .section-title { color: var(--bg); }
+.equipo .section-subtitle { color: rgba(255,255,255,0.65); }
+
+.equipo-intro {
+  margin-bottom: 60px;
+}
+
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.equipo-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius);
+  padding: 36px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.equipo-foto {
+  width: 140px;
+  height: 170px;
+  background: rgba(255,255,255,0.08);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgba(255,255,255,0.25);
+  font-family: var(--font-h);
+  font-size: 0.75rem;
+  border: 1px dashed rgba(255,255,255,0.15);
+}
+
+.equipo-foto .icon-ph {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  opacity: 0.4;
+}
+
+.equipo-info h3 { color: var(--gold); margin-bottom: 4px; }
+
+.equipo-rol {
+  font-family: var(--font-h);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.equipo-bio { color: rgba(255,255,255,0.7); font-size: 0.93rem; }
+
+.equipo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.equipo-tag {
+  font-family: var(--font-h);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: rgba(201,168,76,0.15);
+  color: var(--gold);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION: LEAD MAGNET + FORM
+   ═══════════════════════════════════════════════════════ */
+.leadmagnet {
+  padding: 100px 0;
+  background: var(--gold-bg);
+  position: relative;
+}
+
+.leadmagnet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.leadmagnet-content h2 { margin-bottom: 16px; }
+
+.leadmagnet-content .section-subtitle {
+  margin-bottom: 28px;
+}
+
+.leadmagnet-benefits {
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.leadmagnet-benefits li {
+  padding: 8px 0;
+  padding-left: 28px;
+  position: relative;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.leadmagnet-benefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.pdf-mockup {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  max-width: 280px;
+}
+
+.pdf-mockup-cover {
+  background: linear-gradient(160deg, var(--navy-dark), var(--navy));
+  color: var(--bg);
+  border-radius: var(--radius-sm);
+  padding: 24px 20px;
+  text-align: center;
+  aspect-ratio: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pdf-mockup-cover .pdf-label {
+  font-family: var(--font-h);
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.pdf-mockup-cover .pdf-title {
+  font-family: var(--font-h);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.pdf-mockup-cover .pdf-sub {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* Form */
+.form-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 40px 36px;
+  box-shadow: var(--shadow-lg);
+}
+
+.form-card h3 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.3rem;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-family: var(--font-h);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-b);
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg);
+  transition: border-color var(--transition);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+}
+
+.form-group input::placeholder { color: var(--text-muted); }
+
+.form-submit {
+  width: 100%;
+  margin-top: 8px;
+  font-size: 1.05rem;
+  padding: 18px;
+  justify-content: center;
+}
+
+.form-microcopy {
+  text-align: center;
+  font-family: var(--font-h);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION: SOCIAL PROOF
+   ═══════════════════════════════════════════════════════ */
+.proof {
+  padding: 100px 0;
+  background: var(--bg);
+}
+
+.proof-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.testimonio-card {
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  position: relative;
+}
+
+.testimonio-card::before {
+  content: '"';
+  font-family: Georgia, serif;
+  font-size: 4rem;
+  color: var(--gold);
+  line-height: 1;
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  opacity: 0.3;
+}
+
+.testimonio-text {
+  font-style: italic;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonio-author {
+  font-family: var(--font-h);
+  font-size: 0.85rem;
+}
+
+.testimonio-author strong { color: var(--navy); display: block; }
+.testimonio-author span { color: var(--text-muted); font-size: 0.8rem; }
+
+.proof-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 48px;
+}
+
+.logo-placeholder {
+  width: 120px;
+  height: 48px;
+  background: var(--bg-alt);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-h);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
+}
+
+.proof-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.proof-number { text-align: center; }
+
+.proof-number .number {
+  font-family: var(--font-h);
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.proof-number .label {
+  font-family: var(--font-h);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION: FAQ
+   ═══════════════════════════════════════════════════════ */
+.faq {
+  padding: 100px 0;
+  background: var(--bg-alt);
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.faq-list {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: all var(--transition);
+}
+
+.faq-item:hover { border-color: var(--gold); }
+
+.faq-question {
+  font-family: var(--font-h);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  padding: 20px 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.faq-question::after {
+  content: '+';
+  font-size: 1.4rem;
+  color: var(--gold);
+  font-weight: 300;
+  transition: transform var(--transition);
+}
+
+.faq-item.open .faq-question::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer-inner {
+  padding: 0 24px 20px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 400px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION: CTA FINAL
+   ═══════════════════════════════════════════════════════ */
+.cta-final {
+  padding: 100px 0;
+  background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 100%);
+  color: var(--bg);
+  text-align: center;
+}
+
+.cta-final h2 { color: var(--bg); margin-bottom: 20px; }
+.cta-final p {
+  color: rgba(255,255,255,0.7);
+  max-width: 600px;
+  margin: 0 auto 36px;
+  font-size: 1.1rem;
+}
+
+.cta-final-btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cta-final .wa-link {
+  color: rgba(255,255,255,0.5);
+  font-family: var(--font-h);
+  font-size: 0.9rem;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.cta-final .wa-link:hover { color: var(--gold); }
+
+/* ═══════════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════════ */
+footer {
+  background: var(--bg-dark);
+  color: rgba(255,255,255,0.5);
+  padding: 48px 0 32px;
+  font-family: var(--font-h);
+  font-size: 0.85rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 36px;
+}
+
+.footer-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.footer-col h4 {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.footer-col a {
+  color: rgba(255,255,255,0.5);
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  border-bottom: none;
+}
+
+.footer-col a:hover { color: var(--gold); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.35);
+}
+
+/* ═══════════════════════════════════════════════════════
+   WHATSAPP FLOAT
+   ═══════════════════════════════════════════════════════ */
+.wa-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+  z-index: 1000;
+  transition: all var(--transition);
+  text-decoration: none;
+  border: none;
+}
+
+.wa-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+}
+
+.wa-float svg { width: 30px; height: 30px; fill: white; }
+
+/* ═══════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-visual { order: -1; }
+  .hero-image-placeholder { max-width: 320px; }
+  .pain-grid { grid-template-columns: 1fr; }
+  .pilares-grid { grid-template-columns: 1fr; }
+  .servicios-grid { grid-template-columns: 1fr; }
+  .equipo-grid { grid-template-columns: 1fr; }
+  .equipo-card { grid-template-columns: 100px 1fr; gap: 20px; padding: 24px; }
+  .equipo-foto { width: 100px; height: 120px; }
+  .leadmagnet-grid { grid-template-columns: 1fr; }
+  .testimonios-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero-stats { gap: 24px; }
+  .proof-numbers { gap: 32px; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 16px; }
+  .hero { min-height: auto; }
+  .hero .container { padding-top: 60px; padding-bottom: 60px; }
+  .form-card { padding: 28px 20px; }
+  .hero-ctas { flex-direction: column; }
+  .hero-ctas .btn { text-align: center; justify-content: center; }
+}
+
+/* ═══════════════════════════════════════════════════════
+   PRINT
+   ═══════════════════════════════════════════════════════ */
+@media print {
+  .wa-float { display: none; }
+  .hero { min-height: auto; padding: 40px 0; }
+  body { font-size: 11pt; }
+  .btn { border: 1px solid var(--navy); }
+}
+
+/* ═══════════════════════════════════════════════════════
+   ANIMATIONS
+   ═══════════════════════════════════════════════════════ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.fade-up.visible { opacity: 1; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════════════ -->
+<header class="hero" id="inicio">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-brand">Hermes y Laurel S.A.S.</div>
+        <h1>Tu empresa creció.<br><em>¿Tu equipo directivo creció con ella?</em></h1>
+        <p class="hero-sub">Ayudamos a pymes colombianas en crecimiento a transformar el rendimiento de sus líderes — con rigor estratégico y comprensión profunda del comportamiento humano.</p>
+        <div class="hero-ctas">
+          <a href="#formulario" class="btn btn-primary btn-lg">Descarga la Guía Gratuita</a>
+          <a href="#servicios" class="btn btn-secondary">Conoce nuestros servicios</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number">15+</div>
+            <div class="hero-stat-label">Años de experiencia<br>ejecutiva</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">5.000+</div>
+            <div class="hero-stat-label">Procesos de desarrollo<br>directivo</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">$500.000M</div>
+            <div class="hero-stat-label">Portafolio gestionado<br>(COP)</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-placeholder">
+          <div class="icon-placeholder">&#9673;</div>
+          [FOTO: Equipo directivo<br>en sala de juntas]
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════
+     PROBLEMA
+     ═══════════════════════════════════════════════════════ -->
+<section class="problema" id="problema">
+  <div class="container">
+    <div class="problema-header">
+      <span class="section-label">El desafío</span>
+      <h2 class="section-title">¿Reconoces alguna de estas situaciones?</h2>
+      <p class="section-subtitle">Si te identificas con al menos dos, tu empresa no tiene un problema de mercado — tiene un problema de liderazgo directivo.</p>
+    </div>
+
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-icon">&#9899;</div>
+        <h3>Eres el cuello de botella</h3>
+        <p>Todas las decisiones importantes pasan por ti. Si te enfermas una semana, la empresa se paraliza. Tu equipo espera instrucciones en lugar de tomar la iniciativa.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">&#9888;</div>
+        <h3>Tu equipo reacciona, no anticipa</h3>
+        <p>Apagan incendios todo el día. No hay tiempo para pensar estratégicamente. Cada lunes arranca sin un plan claro — solo con la urgencia del momento.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">&#10060;</div>
+        <h3>Invertiste en capacitación y no pasó nada</h3>
+        <p>Talleres motivacionales, coaching grupal, charlas de liderazgo… pero los comportamientos no cambiaron. La inversión se sintió como un gasto.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">&#9889;</div>
+        <h3>Creciste en ventas pero no en estructura</h3>
+        <p>Más clientes, más ingresos, pero más caos. Lo que funcionaba con 20 personas ya no funciona con 80. La empresa creció, la gestión no.</p>
+      </div>
+    </div>
+
+    <div class="problema-cierre">
+      <p><strong>Si te identificas con al menos dos de estas situaciones,</strong> tu empresa no tiene un problema de mercado ni de producto. Tiene un problema de liderazgo directivo. Y eso tiene solución.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SOLUCIÓN
+     ═══════════════════════════════════════════════════════ -->
+<section class="solucion" id="solucion">
+  <div class="container">
+    <span class="section-label">Nuestra propuesta</span>
+    <h2 class="section-title">Transformamos el rendimiento directivo de tu empresa</h2>
+    <div class="solucion-intro">
+      <p>Hermes y Laurel es la firma de asesoría estratégica que integra dos capacidades que normalmente no encuentras juntas: <strong>rigor técnico en estrategia empresarial</strong> y <strong>comprensión profunda del comportamiento humano.</strong></p>
+      <p>No damos talleres motivacionales. Diagnosticamos, intervenimos y medimos resultados.</p>
+    </div>
+
+    <div class="pilares-grid">
+      <div class="pilar-card">
+        <div class="pilar-number">01</div>
+        <h3>Diagnóstico Riguroso</h3>
+        <p>Evaluamos el rendimiento real de tu equipo directivo con herramientas probadas. No opiniones — datos. Sabemos exactamente dónde está el freno.</p>
+      </div>
+      <div class="pilar-card">
+        <div class="pilar-number">02</div>
+        <h3>Intervención Sistémica</h3>
+        <p>Trabajamos los patrones de comportamiento que frenan a tus líderes. Cambios de raíz, no parches. Transformación que se sostiene en el tiempo.</p>
+      </div>
+      <div class="pilar-card">
+        <div class="pilar-number">03</div>
+        <h3>Resultados Medibles</h3>
+        <p>Cada proceso tiene indicadores claros. Sabrás exactamente qué mejoró, cuánto y por qué. Rendición de cuentas real, no percepciones.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SERVICIOS
+     ═══════════════════════════════════════════════════════ -->
+<section class="servicios" id="servicios">
+  <div class="container">
+    <div class="servicios-header">
+      <span class="section-label">Servicios</span>
+      <h2 class="section-title">Tres formas de trabajar juntos</h2>
+      <p class="section-subtitle">Cada servicio está diseñado para un momento diferente de tu empresa. No necesitas comprar todo — necesitas empezar por donde más impacto vas a sentir.</p>
+    </div>
+
+    <div class="servicios-grid">
+      <div class="servicio-card">
+        <div class="servicio-badge badge-entry">Punto de entrada recomendado</div>
+        <div class="servicio-body">
+          <h3>Diagnóstico de Rendimiento Directivo</h3>
+          <p>Evaluación estructurada de tu equipo directivo. Entrevistas individuales, análisis de patrones de decisión, mapa de bloqueos organizacionales. Entregamos un informe ejecutivo de 10-15 páginas con hallazgos y recomendaciones concretas, más una sesión de retroalimentación de 2 horas con el equipo.</p>
+        </div>
+        <div class="servicio-meta">
+          <span>Duración: 3–5 días</span>
+          <span class="precio">Desde COP $8.000.000</span>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <div class="servicio-badge badge-impact">Máximo impacto</div>
+        <div class="servicio-body">
+          <h3>Sistema de Liderazgo de Alto Rendimiento</h3>
+          <p>Programa integral de transformación directiva. Diagnóstico profundo, intervenciones individuales y grupales, acompañamiento sistémico mes a mes. Diseñado para empresas de 20 a 200 empleados que necesitan un salto cualitativo en la calidad de sus decisiones directivas.</p>
+        </div>
+        <div class="servicio-meta">
+          <span>Duración: 4–6 meses</span>
+          <span class="precio">Desde COP $42.000.000</span>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <div class="servicio-badge badge-retainer">Relación de largo plazo</div>
+        <div class="servicio-body">
+          <h3>Acompañamiento Mensual</h3>
+          <p>Asesoría continua para empresas que ya pasaron por el diagnóstico o el programa. 2-4 sesiones mensuales con el equipo directivo, seguimiento de indicadores acordados y acceso preferencial para decisiones críticas que no pueden esperar.</p>
+        </div>
+        <div class="servicio-meta">
+          <span>Formato: Retainer mensual</span>
+          <span class="precio">COP $5.500.000/mes</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="servicios-cta">
+      <p>¿No sabes cuál necesitas? <a href="#formulario">Descarga nuestra guía gratuita y descúbrelo →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     EQUIPO
+     ═══════════════════════════════════════════════════════ -->
+<section class="equipo" id="equipo">
+  <div class="container">
+    <div class="equipo-intro">
+      <span class="section-label">Quiénes somos</span>
+      <h2 class="section-title">Dos expertises que normalmente no encuentras juntas</h2>
+      <p class="section-subtitle">Hermes y Laurel nace de la convergencia entre la gestión ejecutiva de alto nivel y la comprensión profunda del comportamiento directivo.</p>
+    </div>
+
+    <div class="equipo-grid">
+      <div class="equipo-card">
+        <div class="equipo-foto">
+          <div class="icon-ph">&#9673;</div>
+          [FOTO]
+        </div>
+        <div class="equipo-info">
+          <h3>Daniel Esteban Gómez Cárdenas</h3>
+          <span class="equipo-rol">Socio — Estrategia y Gobierno Corporativo</span>
+          <p class="equipo-bio">Ingeniero Mecánico (EAFIT). +15 años liderando la gerencia de proyectos de infraestructura con portafolios superiores a COP $500.000M. Ex-Gerente General de constructora con 130+ obras y 150 colaboradores. Ex-Presidente de Junta Directiva, Cámara de Comercio Aburrá Sur.</p>
+          <div class="equipo-tags">
+            <span class="equipo-tag">Gobierno Corporativo</span>
+            <span class="equipo-tag">IA Empresarial</span>
+            <span class="equipo-tag">Gestión ESG</span>
+            <span class="equipo-tag">Lean</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="equipo-card">
+        <div class="equipo-foto">
+          <div class="icon-ph">&#9673;</div>
+          [FOTO]
+        </div>
+        <div class="equipo-info">
+          <h3>Gabriel Óscar Rivera</h3>
+          <span class="equipo-rol">Socio — Desarrollo Directivo y Factor Humano</span>
+          <p class="equipo-bio">Ingeniero y especialista en comportamiento humano aplicado a contextos organizacionales. +9 años de práctica y más de 5.000 procesos individuales. Su metodología trabaja patrones sistémicos que determinan el rendimiento directivo, traduciendo la comprensión profunda del comportamiento humano al lenguaje de resultados.</p>
+          <div class="equipo-tags">
+            <span class="equipo-tag">+5.000 Procesos</span>
+            <span class="equipo-tag">Enfoque Sistémico</span>
+            <span class="equipo-tag">Desarrollo Directivo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     LEAD MAGNET + FORMULARIO
+     ═══════════════════════════════════════════════════════ -->
+<section class="leadmagnet" id="formulario">
+  <div class="container">
+    <div class="leadmagnet-grid">
+      <div class="leadmagnet-content">
+        <span class="section-label">Recurso gratuito</span>
+        <h2>Los 5 Errores Directivos que Frenan el Crecimiento de tu Empresa</h2>
+        <p class="section-subtitle">Una guía práctica de 12 páginas con diagnóstico incluido. Sin costo, sin compromiso.</p>
+        <ul class="leadmagnet-benefits">
+          <li>Los 5 errores más comunes que vemos en equipos directivos de pymes colombianas</li>
+          <li>Señales de alerta para cada error — cómo saber si te está pasando</li>
+          <li>Acciones concretas para corregir cada uno desde esta semana</li>
+          <li>Mini-diagnóstico: 10 preguntas para evaluar el rendimiento de tu equipo directivo</li>
+        </ul>
+
+        <div class="pdf-mockup">
+          <div class="pdf-mockup-cover">
+            <div class="pdf-label">Hermes y Laurel</div>
+            <div class="pdf-title">Los 5 Errores Directivos que Frenan el Crecimiento de tu Empresa</div>
+            <div class="pdf-sub">Guía práctica con diagnóstico incluido</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>Descarga tu guía gratuita</h3>
+        <form action="#" method="POST" id="lead-form">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" required>
+          </div>
+          <div class="form-group">
+            <label for="cargo">Cargo</label>
+            <input type="text" id="cargo" name="cargo" placeholder="Tu cargo actual" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email corporativo</label>
+            <input type="email" id="email" name="email" placeholder="tu@empresa.com" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg form-submit">Descargar Guía Gratuita</button>
+          <p class="form-microcopy">Tus datos están seguros. No hacemos spam.<br>Solo te contactaremos si tiene sentido para ambos.</p>
+          <p class="form-microcopy" style="font-size: 0.7rem; margin-top: 8px;">Al enviar este formulario aceptas nuestra política de tratamiento de datos personales conforme a la Ley 1581 de 2012.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     PRUEBA SOCIAL
+     ═══════════════════════════════════════════════════════ -->
+<section class="proof" id="proof">
+  <div class="container">
+    <div class="proof-header">
+      <span class="section-label">Confianza</span>
+      <h2 class="section-title">Resultados que hablan</h2>
+    </div>
+
+    <div class="testimonios-grid">
+      <div class="testimonio-card">
+        <p class="testimonio-text">"El diagnóstico nos mostró exactamente dónde estábamos frenados. En 6 meses, nuestro equipo directivo pasó de apagar incendios a planificar el siguiente año."</p>
+        <div class="testimonio-author">
+          <strong>[Nombre — Placeholder]</strong>
+          <span>Gerente General, empresa de construcción, 60 empleados</span>
+        </div>
+      </div>
+      <div class="testimonio-card">
+        <p class="testimonio-text">"Lo que más valoré fue que no era un taller más. Era un proceso serio, con mediciones antes y después. Pudimos demostrarle a la junta el retorno de la inversión."</p>
+        <div class="testimonio-author">
+          <strong>[Nombre — Placeholder]</strong>
+          <span>Directora de RR.HH., empresa de servicios, 120 empleados</span>
+        </div>
+      </div>
+      <div class="testimonio-card">
+        <p class="testimonio-text">"Pensé que el problema era de ventas. Resultó que era de liderazgo. Hermes y Laurel me ayudó a verlo y a corregirlo. Hoy facturo 40% más con el mismo equipo."</p>
+        <div class="testimonio-author">
+          <strong>[Nombre — Placeholder]</strong>
+          <span>Fundador, empresa de tecnología, 40 empleados</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proof-logos">
+      <div class="logo-placeholder">[Logo cliente 1]</div>
+      <div class="logo-placeholder">[Logo cliente 2]</div>
+      <div class="logo-placeholder">[Logo cliente 3]</div>
+      <div class="logo-placeholder">[Logo cliente 4]</div>
+      <div class="logo-placeholder">[Logo cliente 5]</div>
+    </div>
+
+    <div class="proof-numbers">
+      <div class="proof-number">
+        <div class="number">15+</div>
+        <div class="label">Años de experiencia<br>ejecutiva combinada</div>
+      </div>
+      <div class="proof-number">
+        <div class="number">5.000+</div>
+        <div class="label">Procesos de desarrollo<br>directivo</div>
+      </div>
+      <div class="proof-number">
+        <div class="number">$500.000M</div>
+        <div class="label">Portafolio gestionado<br>(COP)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════════════════════ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-header">
+      <span class="section-label">Preguntas frecuentes</span>
+      <h2 class="section-title">Lo que nos preguntan antes de empezar</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-question">¿Esto es coaching o consultoría?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Es consultoría estratégica con un componente diferenciador: trabajamos el factor humano que determina la ejecución de cualquier estrategia. No es coaching individual ni terapia grupal. Es un proceso estructurado con diagnóstico, intervención y medición de resultados. Piénsalo como una auditoría del rendimiento directivo — con plan de acción incluido.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">¿Cuánto cuesta y cuánto dura?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Depende del servicio. El Diagnóstico Directivo toma 3-5 días y tiene una inversión desde COP $8.000.000. El programa completo de transformación toma 4-6 meses. Descarga nuestra guía gratuita para entender cuál es el punto de entrada correcto para tu empresa — o escríbenos directamente por WhatsApp para una conversación rápida.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">¿Funciona para empresas pequeñas (menos de 20 empleados)?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Nuestro enfoque está diseñado para empresas de 10 a 500 empleados. Si tienes menos de 10 personas, es posible que el diagnóstico individual sea más efectivo que un programa grupal. Contáctanos y te orientamos hacia la opción que mejor se ajuste a tu tamaño y momento.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">¿Qué pasa si ya intentamos consultoría antes y no funcionó?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Es más común de lo que crees. En nuestra experiencia, la mayoría de intervenciones fallidas se enfocaron solo en procesos o solo en motivación. Nosotros trabajamos la intersección: estrategia empresarial + comportamiento directivo. Es la combinación la que hace la diferencia. Si tu experiencia anterior fue un taller que no cambió nada — esto es diferente.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">¿Trabajan solo en Medellín?</div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Nuestra base es Medellín y el Área Metropolitana, pero atendemos empresas en toda Colombia. Los diagnósticos y sesiones pueden ser presenciales o híbridos según la necesidad. Para empresas fuera de Antioquia, diseñamos un formato que combina sesiones presenciales intensivas con acompañamiento virtual.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CTA FINAL
+     ═══════════════════════════════════════════════════════ -->
+<section class="cta-final">
+  <div class="container">
+    <span class="section-label" style="color: var(--gold);">Siguiente paso</span>
+    <h2>El primer paso es entender dónde estás</h2>
+    <p>No te pedimos que contrates nada hoy. Te pedimos que descargues una guía gratuita de 12 páginas que te va a mostrar exactamente qué está frenando a tu equipo directivo — y qué puedes hacer al respecto. Sin costo. Sin compromiso. Solo claridad.</p>
+    <div class="cta-final-btns">
+      <a href="#formulario" class="btn btn-primary btn-lg">Descargar Guía Gratuita</a>
+    </div>
+    <a href="https://wa.me/573005260928?text=Hola%2C%20me%20interesa%20saber%20más%20sobre%20los%20servicios%20de%20Hermes%20y%20Laurel" class="wa-link" target="_blank" rel="noopener">¿Prefieres hablar directamente? Escríbenos por WhatsApp →</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">Hermes y Laurel S.A.S.</div>
+        <p>Asesoría estratégica con articulación humana para pymes colombianas en crecimiento.</p>
+        <p style="margin-top: 12px;">Medellín, Colombia</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="mailto:hermesylaurel@gmail.com">hermesylaurel@gmail.com</a>
+        <a href="tel:+573005260928">+57 300 526 0928</a>
+        <a href="tel:+573112777802">+57 311 277 7802</a>
+      </div>
+      <div class="footer-col">
+        <h4>Conecta</h4>
+        <a href="#" target="_blank" rel="noopener">LinkedIn — Daniel Gómez</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn — Gabriel Rivera</a>
+        <a href="https://wa.me/573005260928" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hermes y Laurel S.A.S. | NIT: [PLACEHOLDER]</span>
+      <span>Política de tratamiento de datos personales | Esta página no constituye una oferta comercial vinculante.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════
+     WHATSAPP FLOTANTE
+     ═══════════════════════════════════════════════════════ -->
+<a href="https://wa.me/573005260928?text=Hola%2C%20me%20interesa%20saber%20más%20sobre%20los%20servicios%20de%20Hermes%20y%20Laurel" class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ═══════════════════════════════════════════════════════
+     JAVASCRIPT
+     ═══════════════════════════════════════════════════════ -->
+<script>
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const wasOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    // Toggle clicked
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// Simple fade-in on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.pain-card, .pilar-card, .servicio-card, .testimonio-card, .equipo-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  observer.observe(el);
+});
+
+// Form submission placeholder
+document.getElementById('lead-form').addEventListener('submit', e => {
+  e.preventDefault();
+  alert('¡Gracias! En producción, aquí se conectará con Mailchimp/Brevo para enviar el PDF automáticamente.');
+});
+</script>
+
+</body>
+</html>
